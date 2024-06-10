@@ -1,0 +1,36 @@
+.navbar img {
+    width: 200px;
+    height: 170px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-fluid .logo {
+    width: 10em;
+}
+
+.container-fluid .input {
+    width: 10em;
+}
+
+.container-fluid .button {
+    width: 10em;
+}
+
+.footer {
+    color:white;
+    border: thin white;
+    text-align: center;
+    bottom: 0;
+}
+
+body {
+    background-image: url('');
+}
+
+.main-container {
+    height: 100vh;
+}
