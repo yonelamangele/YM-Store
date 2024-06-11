@@ -1,3 +1,5 @@
+/* Home Page */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 .navbar img {
     width: 200px;
     height: 170px;
@@ -28,9 +30,73 @@
 }
 
 body {
-    background-image: url('');
+    background-image: url('https://yonelamangele.github.io/YM-Store/Desktop%20-%201%20(1).png');
+    background-size: cover;
+    font-family: Kaushan Script;
+    color: white;
 }
 
-.main-container {
-    height: 100vh;
+.welcome {
+    margin-top: 200px;
+    text-align: center;
 }
+
+.middle1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;
+}
+
+.eren {
+    height: 250px;
+    border-radius: 20px;
+}
+
+h3 {
+    margin-top: 35px;
+}
+
+.offcanvas {
+    background-color: #900603;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+
+
+/* About Page */
+.about {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.middle2 {
+    text-align: center;
+}
+
+
+
+/* Products Page */
+.merch {
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+
+/* Checkout Page */
+
+
+
+
+
+/* Admin Page */
+
+
+
+
+
+/* Contact Page */
