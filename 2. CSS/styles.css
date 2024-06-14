@@ -245,3 +245,47 @@ table {
     text-align: center;
 }
 
+.col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-top: 40px;
+}
+
+label {
+    display: grid;
+}
+
+.sub {
+    margin-top: 27px;
+    width: 165.6px;
+    background-color: #900603;
+    color: white;
+}
+
+.cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-top: 90px;
+}
+
+.cont2 {
+    display: flex;
+}
+
+.cont2 .fa-solid {
+    margin-right: 5px;
+}
+
+.cont2 .fa-brands {
+    margin-right: 5px;
+}
+
+.dont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-top: 40px;
+}
+
