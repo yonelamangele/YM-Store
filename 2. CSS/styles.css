@@ -1,8 +1,7 @@
 /* Home Page */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 .navbar img {
-    width: 200px;
-    height: 170px;
+    width: clamp(10em, 30vw, 10em);
 }
 
 .container-fluid {
@@ -10,8 +9,12 @@
     justify-content: space-evenly;
 }
 
-.container-fluid .logo {
-    width: 10em;
+.logo .logo2 {
+    width: clamp(5em, 30vw, 10em);
+}
+
+.button {
+    padding-left: 75px;
 }
 
 .container-fluid .input {
@@ -34,6 +37,7 @@ body {
     background-size: cover;
     font-family: Kaushan Script;
     color: white;
+    background-repeat: no-repeat;
 }
 
 .welcome {
@@ -45,7 +49,12 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin-top: 75px;
+    flex-wrap: wrap;
 }
+
+/* .middle1 * {
+    min-width: 10em;
+} */
 
 .eren {
     height: 250px;
@@ -65,6 +74,34 @@ h3 {
     color: white;
 }
 
+@media only screen and (max-width: 346px) {
+
+    #dropdown {
+        display: none;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .container-fluid {
+        margin-top: 30px;
+    }
+
+    .button {
+        padding-left: 0px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .cent {
+        padding-left: 48px;
+    }
+    
+}
+
 
 
 /* About Page */
@@ -81,14 +118,117 @@ h3 {
 
 /* Products Page */
 .merch {
-    margin-top: 200px;
+    margin-top: 170px;
+    text-align: center;
+}
+
+#images {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(5em, 1fr));
     text-align: center;
 }
 
 
+#images img {
+    height: 150px;
+     width: 150px;
+     border-radius: 10px;
+}
+
+#display1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cent * {
+    padding: 0 .5em;
+}
+
+#display1 * {
+    margin: 0 0 20px;
+}
+
+#viewMore {
+    color: #900603;
+}
+
+#viewMore:hover {
+    background-color: #900603;
+    color: white;
+}
+
+.purchase {
+    background-color: #900603;
+    color: white;
+}
+
+.purchase:hover {
+    background-color: white;
+    color: #900603;
+}
+
+.image-container {
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    transition: transform 0.9s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.6); /* Adjust the scale factor as needed */
+  }
+
+  #dropdown {
+    width: 150px;
+    border-radius: 10px;
+    
+  }
+  #dropdown> i{
+    margin-left: 5px;
+  }
+
+  #searchBar {
+    border-radius: 10px;
+  }
+
+
+
 
 /* Checkout Page */
+table, th, td {
+    border: 2px solid white;
+}
 
+table {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.stuff {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.size {
+    height: 120px;
+    width: 120px;
+}
+
+.glass:hover {
+    color: black;
+    cursor: pointer;
+}
 
 
 
@@ -100,3 +240,8 @@ h3 {
 
 
 /* Contact Page */
+.contact1 {
+    margin-top: 200px;
+    text-align: center;
+}
+
